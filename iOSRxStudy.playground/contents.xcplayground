@@ -5,6 +5,7 @@
         <page name='ReactiveX와RxSwift'/>
         <page name='비동기프로그래밍'/>
         <page name='RxSwift주요구성요소'/>
-        <page name='RxSwift프로젝트에임포트하기'/>
+        <page name='Observables'/>
+        <page name='Subjects'/>
     </pages>
 </playground>
