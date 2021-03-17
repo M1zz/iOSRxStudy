@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='ios' display-mode='raw' buildActiveScheme='true'>
+<playground version='6.0' target-platform='ios' display-mode='rendered' buildActiveScheme='true'>
     <pages>
         <page name='Contents'/>
         <page name='ReactiveX와RxSwift'/>
@@ -7,5 +7,6 @@
         <page name='RxSwift주요구성요소'/>
         <page name='Observables'/>
         <page name='Subjects'/>
+        <page name='Operator1'/>
     </pages>
 </playground>
