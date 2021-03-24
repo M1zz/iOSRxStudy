@@ -12,4 +12,5 @@
  - [Observables](Observables)
  - [Subjects](Subjects)
  - [Operator1 (Creating, Transforming)](Operator1)
+ - [Operator2 (Filtering, Combining)](Operator2)
  */
