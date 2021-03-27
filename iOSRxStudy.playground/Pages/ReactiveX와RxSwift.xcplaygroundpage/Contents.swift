@@ -17,6 +17,12 @@
  ## RxSwift란?
  Swift라는 언어로, Functional Reactive Programming 이 가능하게 해주는 ReactiveX 라이브러리 입니다. 
  
+ 
+ ## Playground에서 RxSwift쓰기
+ 나는 예제를 플레이그라운드에서 쓰고 싶은데, 서드파티 라이브러리가 없는 문제에 부딪혔습니다. Playground RxSwift를 찾아보면, 많이 나오지만 SPM을 쓸 수 있는데 굳이 CocoaPod을 써야하나 라는 생각에 정리해 보았습니다.
+ 새로운 프로젝트를 만들어서, File -> Swift Packages -> Add Package Dependency... 로 RxSwift를 추가합니다.
+ 그리고 나서 File -> New -> Playground 로 새 플레이 그라운드를 추가해 줍니다.
  */
+
 
 //: [Next](@next)

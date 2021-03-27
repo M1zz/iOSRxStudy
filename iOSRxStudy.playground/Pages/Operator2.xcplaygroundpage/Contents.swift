@@ -4,7 +4,7 @@
  ## Filtering Observables
  
  - Debounce
-   — 다른 항목을 내 보내지 않고 특정 시간 범위가 지난 경우에만 Observable에서 항목을 방출합니다.
+   — 다른 항목을 내 보내지 않고 특정 시간 범위가 지난 경우에만 Observable에서 항목을 방출합니다. throttle
  - Distinct
    — Observable에 의해 방출 된 중복 아이템을 방출하지 않습니다.
  - ElementAt

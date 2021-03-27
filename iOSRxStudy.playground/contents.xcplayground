@@ -9,5 +9,6 @@
         <page name='Subjects'/>
         <page name='Operator1'/>
         <page name='Operator2'/>
+        <page name='Test'/>
     </pages>
 </playground>

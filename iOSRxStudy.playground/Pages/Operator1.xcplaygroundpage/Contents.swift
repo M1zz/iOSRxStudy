@@ -1,4 +1,5 @@
 //: [Previous](@previous)
+
 /*:
  # Operators 1
 
@@ -11,31 +12,12 @@
    - Observer 메소드를 코드로 호출하여 처음부터 Observable을 생성합니다.
 
  */
- let source: Observable = Observable.create { observer in
-     for i in 1...5 {
-         observer.on(.next(i))
-     }
-     observer.on(.completed)
+import RxSwift
 
-     // Note that this is optional. If you require no cleanup you can return
-     // `Disposables.create()` (which returns the `NopDisposable` singleton)
-     return Disposables.create {
-         print("disposed")
-     }
- }
-
- source.subscribe {
-     print($0)
- }
- 
- //next(1)
- //next(2)
- //next(3)
- //next(4)
- //next(5)
- //completed
- //disposed
- 
+let createObservable: Observable<Int> = Observable.create { observer -> Disposable in
+   observer.onNext(1)
+   return Disposables.create()
+}
 /*:
 
  - Deferred
@@ -50,7 +32,7 @@
    - TBD
 
  - From
-   - 다양한 다른 객체와 데이터 유형을 Observable로 변환합니다.
+   - 다양한 다른 객체와 데이터 유형을 각각의 Observable로 변환합니다.
  */
 
  let numbers = [1,2,3,4,5]
@@ -59,8 +41,6 @@
  source.subscribe {
      print($0)
  }
-
-
  //next(1)
  //next(2)
  //next(3)
@@ -77,17 +57,18 @@
    - 특정 항목을 방출하는 Observable 생성.
 
  */
- let source = Observable.just(1, 2, 3)
 
- source.subscribe {
-     print($0)
- }
+let source2 = Observable.just((1, 2, 3))
 
- let source2 = Observable.just([1,2,3])
+source2.subscribe {
+    print($0)
+}
 
- source2.subscribe {
-     print($0)
- }
+let source3 = Observable.just([1,2,3])
+
+source3.subscribe {
+    print($0)
+}
  
  //next((1, 2, 3))
  //completed
